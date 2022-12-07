@@ -1,0 +1,124 @@
+@import "./null";
+
+@font-face {
+	font-family: "Inkulinati 210706";
+	src: url("../../fonts/Inkulinati-Regular.eot");
+	src: local("☺"), url("../../fonts/Inkulinati-Regular.woff") format("woff"),
+		url("../../fonts/Inkulinati-Regular.ttf") format("truetype"),
+		url("../../fonts/Inkulinati-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TAMAT";
+	src: url("");
+	src: local("☺"), url("../../fonts/TAMAT.woff") format("woff"), url("../../fonts/TAMAT.ttf") format("truetype"),
+		url("../../fonts/TAMAT.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+body {
+	font-family: "Ruda", sans-serif;
+	background-color: #1f1f1f;
+}
+@import "./header";
+.arrow-down {
+	margin: 30px;
+}
+.arrow-down span {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-bottom: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	transform: rotate(45deg);
+	margin: -11px;
+	animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+.cards {
+	&__wrapper {
+		padding: 96px 0px 60px 0px;
+		border-bottom: 1px solid #ffffff;
+
+		display: flex;
+		justify-content: space-between;
+	}
+	.card__inner {
+		width: 400px;
+		height: 540px;
+		background-color: #0d0d0d;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.card__link {
+		cursor: pointer;
+	}
+	.card__image {
+		width: 230px;
+		img {
+			width: 100%;
+		}
+	}
+	.card__title {
+		padding: 48px 0px 17px 0px;
+		font-family: "Inkulinati 210706";
+		font-size: 28px;
+		color: #ffffff;
+	}
+	.card__subtitle {
+		font-family: "Inkulinati 210706";
+		font-size: 25px;
+		color: #ffffff;
+		padding-bottom: 12px;
+	}
+}
+.info {
+	&__title {
+		font-size: 28px;
+		font-family: "Inkulinati 210706";
+		padding-bottom: 48px;
+	}
+	&__scrim {
+		text-align: center;
+		padding: 60px 0px;
+		font-size: 25px;
+		color: #ffffff;
+		border-bottom: 1px solid #ffffff;
+	}
+	&__ruby {
+		text-align: center;
+		padding: 60px 0px;
+		font-size: 25px;
+		color: #ffffff;
+	}
+}
+
+@import "./footer";

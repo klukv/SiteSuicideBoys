@@ -1,0 +1,131 @@
+@import "./null";
+
+@font-face {
+	font-family: "Inkulinati 210706";
+	src: url("../../fonts/Inkulinati-Regular.eot");
+	src: local("☺"), url("../../fonts/Inkulinati-Regular.woff") format("woff"),
+		url("../../fonts/Inkulinati-Regular.ttf") format("truetype"),
+		url("../../fonts/Inkulinati-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TAMAT";
+	src: url("");
+	src: local("☺"), url("../../fonts/TAMAT.woff") format("woff"), url("../../fonts/TAMAT.ttf") format("truetype"),
+		url("../../fonts/TAMAT.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.text {
+	flex: 0 1 545px;
+	font-size: 25px;
+	line-height: 28px;
+	color: #ffffff;
+	text-align: center;
+}
+.image {
+	flex: 0 0 590px;
+	img {
+		width: 100%;
+	}
+}
+body {
+	font-family: "Ruda", sans-serif;
+	background-color: #1f1f1f;
+}
+@import "./header";
+.dates {
+	width: 100%;
+	background-image: url(../img/bio/bio_back.jpg);
+	background-size: cover;
+	margin-bottom: 60px;
+	&__inner {
+		padding: 56px 0px 67px 0px;
+		height: 700px;
+	}
+	&__menu {
+		height: 100%;
+		font-family: "Inkulinati 210706";
+		display: grid;
+		column-gap: 260px;
+		row-gap: 460px;
+		color: #ffffff;
+		grid-template-columns: repeat(3, 1fr);
+		font-size: 33px;
+		grid-template-rows: repeat(2, 1fr);
+		&-link {
+			white-space: nowrap;
+			a {
+				color: #ffffff;
+				transition: color 0.2s ease-in-out;
+				&:hover {
+					color: rgb(187, 59, 59);
+				}
+			}
+			cursor: pointer;
+		}
+		.nowadays-link {
+			grid-column: 3/4;
+		}
+	}
+}
+.bio {
+	&__start {
+		border-top: 1px solid #ffffff;
+		padding: 60px 0px;
+		display: flex;
+		justify-content: center;
+		&-image {
+			padding-right: 40px;
+		}
+	}
+	&__second {
+		border-top: 1px solid #ffffff;
+		padding: 60px 0px;
+		display: flex;
+		justify-content: center;
+		&-image {
+			padding-left: 40px;
+		}
+	}
+	&__third {
+		border-top: 1px solid #ffffff;
+		padding: 60px 0px;
+		display: flex;
+		justify-content: center;
+		&-image {
+			padding-right: 40px;
+		}
+	}
+	&__four {
+		border-top: 1px solid #ffffff;
+		padding: 60px 0px;
+		display: flex;
+		justify-content: center;
+		&-image {
+			padding-left: 40px;
+		}
+	}
+	&__nowadays {
+		border-top: 1px solid #ffffff;
+		padding: 60px 0px 96px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-image {
+			padding-bottom: 48px;
+		}
+		&-text {
+			flex: 1 1 auto;
+		}
+	}
+}
+
+@import "./footer";
