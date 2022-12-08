@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SuicideBoys</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/music.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__logo">
+				<img src="./img/header/logo.svg" alt="logo">
+			</div>
+			<nav class="header__navigation">
+				<ul class="header__navigation-menu">
+					<li class="header__navigation-link"><a href="index.html">Home</a></li>
+					<li class="header__navigation-link"><a href="bio.html">Biography</a></li>
+					<li class="header__navigation-link"><a href="composition.html">Composition</a></li>
+					<li class="header__navigation-link"><a href="discography.html">Discography</a></li>
+					<li class="header__navigation-link active"><a href="music.html">Music</a></li>
+					<li class="header__navigation-link"><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="video">
+			<div class="container">
+				<div class="video__inner">
+					<video controls width="640" height="360">
+						<source src="./img/music/$UICIDEBOY$ - 2ND HAND_mobclip.net.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</section>
+		<section class="songs">
+			<div class="container">
+				<h1 class="songs__title">Песни</h1>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/paris.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideBoy_-_Paris_64294324.mp3" onplay="other_pause([0])">
+					</audio>
+					<div class=" song__title">Paris
+					</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/COD.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideboy_-_Champion_of_Death_50968773.mp3"
+						onplay="other_pause([1])">
+					</audio>
+					<div class="song__title">Champion of Death</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/mount_sinai.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideboy_-_Mount_Sinai_52942763.mp3" onplay="other_pause([2])">
+					</audio>
+					<div class="song__title">Mount Sinai</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/and_to_those.svg" alt="img">
+					</div>
+					<audio controls
+						src="./img/music/uicideBoy_-_And_To_Those_I_Love_Thanks_For_Sticking_Around_68382197.mp3"
+						onplay="other_pause([3])">
+					</audio>
+					<div class="song__title">And To Those I Love Thanks For Sticking Around</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/carrolton.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideBoy_-_Carrollton_57770284.mp3" onplay="other_pause([4])">
+					</audio>
+					<div class="song__title">Carrollton</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/kill_yourself.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideBoy_-_Kill_Yourself_Part_III_64303924.mp3"
+						onplay="other_pause([5])">
+					</audio>
+					<div class="song__title">Kill Yourself Part III</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/lte.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideboy_-_LTE_55392000.mp3" onplay="other_pause([6])">
+					</audio>
+					<div class="song__title">LTE</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/mount_sinai.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideboy_-_Sunshine_52942772.mp3" onplay="other_pause([7])">
+					</audio>
+					<div class="song__title">Sunshine</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/mount_sinai.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideboy_Pouya_-_outh_ide_uicide_52942758.mp3"
+						onplay="other_pause([8])">
+					</audio>
+					<div class="song__title">South side suicide</div>
+				</div>
+				<div class="songs__song">
+					<div class="song__image">
+						<img src="./img/music/venom.svg" alt="img">
+					</div>
+					<audio controls src="./img/music/uicideboy_Shakewell_-_Venom_50968762.mp3"
+						onplay="other_pause([9])">
+					</audio>
+					<div class="song__title">Venom</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__inner">
+			© А. Е. Александров, 2022
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>

@@ -164,7 +164,6 @@ body {
   color: rgb(187, 59, 59);
 }
 
-/* стили для корневого элемента слайдера */
 .slider {
   position: relative;
   max-width: 100%;
